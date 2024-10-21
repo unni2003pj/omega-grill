@@ -12,7 +12,7 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Omega Grills" />
     <meta property="og:description" content="Healthify | Heal | Relive" />
-    <meta property="og:image" content="assets/images/fav/og.png" />
+    <meta property="og:image" content="https://omegagrills.com/assets/images/fav/og.png" />
     <meta property="og:url" content="https://omegagrills.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Omega Grills" />
@@ -54,6 +54,7 @@
                         <div class="navigation-container">
                             <a href="./" class="brand-logo">
                                 <img src="assets/images/logo.png" alt="logo" />
+                                <span class="tag-line">Taste & See</span>
                             </a>
                             <ul class="navigation-menu d-none d-sm-flex">
                                 <li>
@@ -78,16 +79,23 @@
 
         <!-- Carousel -->
 
-        <section id="carouselExampleIndicators" class="carousel o-carousel slide">
+        <section id="carouselExampleIndicators" class="carousel o-carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
+                <div class="carousel-caption">
+                    <h1>Fish & Salads</h1>
+                    <p>A solution on Diet for a Healthy Life</p>
+                    <button type="button" class="o-button btn btn-primary mt-3" data-scroll="menu">Checkout Our
+                        Menu</button>
+                </div>
                 <div class="carousel-item active">
                     <img src="assets/images/banner/banner.jpg" class="d-block w-100" alt="Banner One">
-                    <div class="carousel-caption">
-                        <h1>Fish & Salads</h1>
-                        <p>A solution on Diet for a Healthy Life</p>
-                        <button type="button" class="o-button btn btn-primary mt-3" data-scroll="menu">Checkout Our
-                            Menu</button>
-                    </div>
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/banner/banner-2.jpg" class="d-block w-100" alt="Banner Two">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/banner/banner-3.jpg" class="d-block w-100" alt="Banner Three">
                 </div>
             </div>
         </section>
@@ -131,43 +139,20 @@
                         <h3 class="title">Our Menus</h3>
                     </div>
 
-                    <div class="section-content">                        
-
-                        <ul class="nav nav-pills o-nav-tab mb-3" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-sandwich-tab" data-bs-toggle="pill" data-bs-target="#pills-sandwich" type="button" role="tab" aria-controls="pills-sandwich" aria-selected="true">Sandwich / Burgers</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-biriyani-tab" data-bs-toggle="pill" data-bs-target="#pills-biriyani" type="button" role="tab" aria-controls="pills-biriyani" aria-selected="true">Biriyani</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="pills-wraps-tab" data-bs-toggle="pill" data-bs-target="#pills-wraps" type="button" role="tab" aria-controls="pills-wraps" aria-selected="false">Wraps</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="pills-dosa-tab" data-bs-toggle="pill" data-bs-target="#pills-dosa" type="button" role="tab" aria-controls="pills-dosa" aria-selected="false">Dosas</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-kappa-tab" data-bs-toggle="pill" data-bs-target="#pills-kappa" type="button" role="tab" aria-controls="pills-kappa" aria-selected="false">Other</button>
-                            </li>                            
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-drinks" type="button" role="tab" aria-controls="pills-kappa" aria-selected="false">Drinks</button>
-                            </li>
-                          </ul>
-
-                          <div class="tab-content" id="pills-tabContent">
+                    <div class="section-content">
 
                             <!-- Sandwich -->
-                            <div class="tab-pane pt-3 fade show active" id="pills-sandwich" role="tabpanel" aria-labelledby="pills-sandwich-tab">
-                                <div class="type-content mb-3">
+                            <div class="mb-5">
+                                <div class="type-content mb-4">
                                     <h5 class="fw-bold mb-3">Sandwiches (Red & White)</h5>
                                     <p class="grey-color">Indulge in our delicious fish sandwiches, made with the freshest ingredients!</p>    
                                     <ul class="my-3">
                                         <li>Red Fish Meat (Red FM): Kera/Tuna</li>
-                                        <li>White Fish Meat (WFM): Vatta/Motha</li>
+                                        <li>White Fish Meat (White FM): Vatta/Motha</li>
                                     </ul>
                                 </div>                               
 
-                                <div class="row g-3 justify-content-center">
+                                <div class="row g-3">
                                     <div class="col-lg-4 col-md-6">
                                         <div class="card o-card">
                                             <img src="assets/images/sandwich/american-red.png" class="card-img-top" alt="American Red/White">
@@ -217,8 +202,12 @@
                             </div>
 
                             <!-- Biriyani -->
-                            <div class="tab-pane pt-3 fade" id="pills-biriyani" role="tabpanel" aria-labelledby="pills-biriyani-tab">
-                                <div class="row g-3 justify-content-center">
+                            <div class="mb-5">
+                                <div class="type-content mb-4">
+                                    <h5 class="fw-bold mb-3">Biriyani</h5>
+                                    <p class="grey-color">Fragrant rice, tender meat, and a flavorful blend of spices</p>    
+                                </div>
+                                <div class="row g-3">
                                     <div class="col-lg-4 col-md-6">
                                         <div class="card o-card">
                                             <img src="assets/images/biriyani/fish-biriyani.png" class="card-img-top" alt="Fish Biriyani">
@@ -250,9 +239,9 @@
                             </div>
 
                             <!-- Wraps -->
-                            <div class="tab-pane pt-3 fade" id="pills-wraps" role="tabpanel" aria-labelledby="pills-wraps-tab">
+                            <div class="mb-5">
 
-                                <div class="type-content mb-3 justify-content-center">
+                                <div class="type-content mb-4 justify-content-center">
                                     <h5 class="fw-bold mb-3">Wraps (Red & White)</h5>
                                     <p class="grey-color mb-3">Enjoy our flavorful wraps, perfect for any meal!</p>
                                 </div>
@@ -317,14 +306,14 @@
                             </div>
 
                             <!-- Dosas -->
-                            <div class="tab-pane fade" id="pills-dosa" role="tabpanel" aria-labelledby="pills-dosa-tab">
+                            <div class="mb-5">
 
-                                <div class="type-content mb-3">
+                                <div class="type-content mb-4">
                                     <h5 class="fw-bold mb-3">Dosas</h5>
                                     <p class="grey-color mb-3">Experience our tasty dosas with unique fillings!</p>
                                 </div>
 
-                                <div class="row g-3 justify-content-center">
+                                <div class="row g-3">
                                     <div class="col-lg-4 col-md-6">
                                         <div class="card o-card">
                                             <img src="assets/images/dosa/tuna-dosa.png" class="card-img-top" alt="Tuna Dosa">
@@ -356,8 +345,12 @@
                             </div>
 
                             <!-- Kappa -->
-                            <div class="tab-pane fade" id="pills-kappa" role="tabpanel" aria-labelledby="pills-kappa-tab">
-                                <div class="row g-3 justify-content-center">
+                            <div class="mb-5">
+                                <div class="type-content mb-4">
+                                    <h5 class="fw-bold mb-3">Others</h5>
+                                    <p class="grey-color"></p>    
+                                </div>
+                                <div class="row g-3">
                                     <div class="col-lg-4 col-md-6">
                                         <div class="card o-card">
                                             <img src="assets/images/kappa/kappa.png" class="card-img-top" alt="Kappa Plus Fish Curry">
@@ -416,8 +409,13 @@
                             </div>
 
                             <!-- Drinks -->
-                            <div class="tab-pane fade" id="pills-drinks" role="tabpanel" aria-labelledby="pills-drinks-tab">
-                                <div class="row g-3 justify-content-center">
+                            <div class="mb-5">
+                                <div class="type-content mb-4">
+                                    <h5 class="fw-bold mb-3">Drinks</h5>
+                                    <p class="grey-color">Refreshing beverages</p>    
+                                </div>
+
+                                <div class="row g-3">
                                     <div class="col-lg-4 col-md-6">
                                         <div class="card o-card">
                                             <img src="assets/images/drinks/coffee.png" class="card-img-top" alt="Black Coffee">
